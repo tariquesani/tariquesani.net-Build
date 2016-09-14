@@ -1,0 +1,301 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../static/style.css">
+<title>August 2016  — New Blog</title>
+<body>
+  <header>
+    <h1>New Blog</h1>
+    <nav>
+      <ul class="nav navbar-nav">
+        <li><a href="../../../">Welcome</a></li>
+        
+          <li class="active"><a href="../../../refreshed/">Blog</a></li>
+        
+          <li><a href="../../../projects">Projects</a></li>
+        
+          <li><a href="../../../about">About</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+  <div class="page">
+    
+  <header class="page-header">
+    <h1 class="page-title">Month: August 2016</h1>      
+  </header>
+  
+  
+	
+
+<section class="blog blog-single white-bg page-section-pt">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-lg-9 col-md-9">
+  <div class="content">
+  <h2>The search</h2>
+
+<p>Having decided to ditch WordPress as the CMS on my site and use a static site generator, I started my search for one. General reading on the web seemed to all point at <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, I did not like the fact that the content format in Jekyll was mostly fixed. I explored many other systems Hexo, Hugo, Pelican, Hyde, Brunch, Middleman, Harp, Expose, …</p>
+
+<p>A couple of them were in PHP as well and thus tempting, but all of them proved to be rather inflexible and not what I was looking for. Then I remembered <a href="https://kushaldas.in/" target="_blank">Kushal Das</a> used something for his blog. I asked him and he pointed out to a script that he used, but more importantly, he mentioned <a href="https://www.getlektor.com/" target="_blank">Lektor</a>.</p>
+
+<h2>Why Lektor...</h2>
+
+<p>What caught my attention was that Lektor was written by the author of Flask, a Python micro-framework which I love.</p>
+
+<p>The installation was super simple, and I had the quickstart running in minutes. What stood out immediately was that Lektor had an admin interface which opened in the browser and second the build system was incremental and ran as soon as I saved anything in the admin.</p>
+
+<p>Lektor is not a fixed format CMS, but it is more of a framework. From the introduction to Lektor - "You can model your own blog posts and render them with the templates you want to use. There is not a single built-in template that you have to use. The only thing it gives you is a quickstart that sets up the folders and copies default minimalistic templates over."</p>
+
+<h2>The transition</h2>
+<p>I now wanted something which could import WordPress posts into Lektor. Unable to find any such plugin I hacked my own <a href="https://github.com/tariquesani/lektor-exporter" target="_blank">WordPress to Lektor</a> export plugin. The plugin works pretty well, and I could export 1200 posts from my old blog to Lektor. Unfortunately, it turns out that Lektor does not scale well as of now. So I dropped the idea of converting the whole of the old site to Lektor and started afresh. A new design and a new set of functionality.</p>
+
+<p>As I kept creating templates for this site, I kept incorporating more and more features. The <a href="https://github.com/tariquesani/tariquesani.net" target="_blank">complete code for this website</a> is available on GitHub. The generated content is also tracked in a separate Git repo. As of now I have not actually set up a deployment pipeline but will do in due course. For comments I use Disqus, the search is Google Site Search.</p>
+
+<p>The old content was converted to static files using the Simply Static Wordpress plugin. Before turning WordPress to static pages, I switched to Disqus comments and Google Site Search so that visitors do not loose out on these essential functionalities.</p>
+  </div><!-- content -->
+  <div>
+    <hr>
+    <p>Sharing in caring</p>
+    
+<span class='st_sharethis_large' displayText='ShareThis'></span>
+<span class='st_facebook_large' displayText='Facebook'></span>
+<span class='st_twitter_large' displayText='Tweet'></span>
+<span class='st_linkedin_large' displayText='LinkedIn'></span>
+<span class='st_pinterest_large' displayText='Pinterest'></span>
+<span class='st_tumblr_large' displayText='Tumblr'></span>
+<span class='st_pocket_large' displayText='Pocket'></span>
+<span class='st_email_large' displayText='Email'></span>
+
+  </div>
+  <div class="blog-comments">
+    
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function() { this.page.identifier = "/blog@blog-archive/2016/8"; this.page.url = "http://tariquesani.net/refreshed/2016/8/"; };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//tariquesani.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+    rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+
+  </div>
+  </div><!-- col-lg-9 -->
+  <div class="col-lg-3 col-md-3">
+         
+       <div class="slidebar">
+          <div class="author">
+            <div class="author-details">
+                <div class="author-avtar">
+                  <img class="img-responsive" src="/images/my-photo.jpg" alt="">
+                </div>
+                <div class="author-name">
+                  <h4>Tarique Sani</h4>
+                  <b>Do what <br /> you love</b>
+                </div>
+            </div>
+            <div class="author-content"> 
+             <p>Pediatrician and a Forensic Expert. A passionate PHP geek. Currently CTO, SANIsoft. Also a cyclist, photographer, bird watcher, nature lover and a FOSS enthusiast.</p>
+            </div>
+          </div>
+          <div class="slidebar-share">
+              <h4>Social Links : </h4>
+              <ul>
+                <li><a href="https://www.facebook.com/tariquesani"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/tariquesani"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.pinterest.com/tariquesani/"><i class="fa fa-pinterest-p"></i> </a></li>                
+                <li><a href="https://www.linkedin.com/in/tariquesani"><i class="fa fa-linkedin"></i> </a></li>
+              </ul>
+           </div> 
+          <div class="slidebar-link">            
+            <h3><a href="http://tariquesani.net/blog/2006/05/08/7-a-peadiatrician-and-a-forensic-expert-how-did-you-become-a-php-geek/">More about me</a></h3>
+            <ul>
+              <li><a href="http://tariquesani.net/blog/2006/05/08/7-a-peadiatrician-and-a-forensic-expert-how-did-you-become-a-php-geek/">A pediatrician and a forensic expert how did I become a php geek?</a></li>
+            </ul>
+          </div>
+          <div class="slidebar-link">            
+            <h3><a href="/coppermine/">Coppermine Gallery</a></h3>
+            <ul>
+              <li><a href="/coppermine/">Demo of an Open Source project which I led to 3 million downloads</a></li>
+            </ul>
+          </div>
+          <div class="slidebar-link">            
+            <h3><a href="http://sanisoft.com" >SANIsoft</a></h3>
+            <ul>
+              <li><a href="http://sanisoft.com">High performance and scalable PHP web application development</a></li>
+            </ul>
+          </div>
+          <div class="slidebar-link">            
+            <h3><a href="http://shdlr.com">Shdlr</a></h3>
+            <ul>
+              <li><a href="http://shdlr.com">The online conference schedule creator</a></li>
+            </ul>
+          </div>                    
+           <div class="slidebar-link">
+            <h3>Archive</h3>
+            <ul id="sidebararchives">
+              <!-- Sidebar Archives gets loaded here using javascript -->
+            </ul>
+          </div>
+       </div><!-- slidebar -->
+
+  </div> <!-- col-lg-3 -->
+  </div><!-- row -->
+ </div><!-- container-fluid -->
+</section>  
+
+  
+	
+
+<section class="blog blog-single white-bg page-section-pt">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-lg-9 col-md-9">
+  <div class="content">
+  <h2>Why WordPress? </h2>
+
+<p class="text-left" >
+  When I switched to WordPress it was out of necessity, I had been keeping a journal for a few years on Live Journal and with the demise of that platform I needed a place to continue keeping those journal entries online. I also needed a place to write new stuff. This domain at the time was hosting just my photography on an instance of Coppermine Photo Gallery, a project I was leading at that point.
+</p>
+
+<p class="text-left" >
+  WordPress was still in its infancy, it was immensely hackable. Matt was a struggling hacker, and the software was written in PHP. These were reasons enough to start tinkering with WordPress. Additionally, WordPress allowed import of LiveJournal entries. I quickly put together my own theme. Wrote a few plugin and things were smooth...
+</p>
+
+<h2>Why I still code?</h2>
+
+<p class="text-left" >
+  Let me digress a bit here. The shortest answer to this would be because I really really love to code. Coding was one of my earliest hobbies. Coding involves several other things I like, a bit of writing, a bit of Math, lot of exploration and problem solving. Since most of what I code is scratching a personal itch and open sourced, there is a sense of satisfaction of having created something useful for myself and possibly someone else. This website, at least, to begin with, was just an extension of my need to code.
+</p>
+
+<h2>Why bye bye WordPress?</h2>
+
+<p class="text-left" >
+  Well, things were almost smooth but not really. There were updates and then security updates and then plugin updates. The Wordpress core started to become very popular, more powerful and in turn more complex. As it stands, WordPress is the most flexible and feature rich CMS that PHP has to offer.
+</p>
+
+<p class="text-left" >
+  The complexity meant that the easy hackability of Wordpress got lost. Without being able to tinker with tweaking stuff around the website, things became boring. I mostly stopped writing. However lately keeping WordPress has become expensive.
+</p>
+
+<p class="text-left" >
+  The popularity has come at a price. Wordpress has become the prime target of script kiddies and crackers from across the world. Every website on the Internet is vulnerable to hackers to some degree; however, having a custom website would mean that a hacker would need to target your site specifically. The difference with a WordPress based website is that the cracker can target millions of websites at once, without knowing or caring who they belong to.
+</p>
+
+<p>When you start out you, firmly feel that your Wordpress install is impregnable! You update the core regularly, you keep all the plugins updated and things run. Till the time they don't. The first time my site got hacked I was almost in disbelief. I then realized that one of the plugins which had a vulnerability had not been updated by the author. Hey! They give it away for free, don't they? No sweat! I restored a clean copy and installed a security plugin. The plugin scan was taking too many resources. I switched till I found one which suited me. I noticed that the site was attracting too much traffic. It was quickly proven to be malicious bot traffic. After several months it happened again, this time, I outsourced the cleanup and put the site behind a proxy, the so-called website firewall. I, however, did not like the idea. This was a simple personal site. It should not cost this much money and time and headaches. I started looking at alternatives. First I looked at other CMSes, then at static site generators. Static site generators appealed a lot to the hacker me. What I chose ultimately and why is written in a <a href="/refreshed/2016/8/lektor-lessons-learned/" >separate post</a></p>
+
+<h2>What this does not mean!</h2>
+
+<p class="text-left" >
+  This does not mean that I will never use WordPress for any site. I would still continue to use WordPress on all sites which require a dynamic CMS. Sites which need content to be updated by non tech people and most of my client sites which need a CMS... 
+</p>
+  </div><!-- content -->
+  <div>
+    <hr>
+    <p>Sharing in caring</p>
+    
+<span class='st_sharethis_large' displayText='ShareThis'></span>
+<span class='st_facebook_large' displayText='Facebook'></span>
+<span class='st_twitter_large' displayText='Tweet'></span>
+<span class='st_linkedin_large' displayText='LinkedIn'></span>
+<span class='st_pinterest_large' displayText='Pinterest'></span>
+<span class='st_tumblr_large' displayText='Tumblr'></span>
+<span class='st_pocket_large' displayText='Pocket'></span>
+<span class='st_email_large' displayText='Email'></span>
+
+  </div>
+  <div class="blog-comments">
+    
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function() { this.page.identifier = "/blog@blog-archive/2016/8"; this.page.url = "http://tariquesani.net/refreshed/2016/8/"; };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//tariquesani.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+    rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+
+  </div>
+  </div><!-- col-lg-9 -->
+  <div class="col-lg-3 col-md-3">
+         
+       <div class="slidebar">
+          <div class="author">
+            <div class="author-details">
+                <div class="author-avtar">
+                  <img class="img-responsive" src="/images/my-photo.jpg" alt="">
+                </div>
+                <div class="author-name">
+                  <h4>Tarique Sani</h4>
+                  <b>Do what <br /> you love</b>
+                </div>
+            </div>
+            <div class="author-content"> 
+             <p>Pediatrician and a Forensic Expert. A passionate PHP geek. Currently CTO, SANIsoft. Also a cyclist, photographer, bird watcher, nature lover and a FOSS enthusiast.</p>
+            </div>
+          </div>
+          <div class="slidebar-share">
+              <h4>Social Links : </h4>
+              <ul>
+                <li><a href="https://www.facebook.com/tariquesani"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/tariquesani"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.pinterest.com/tariquesani/"><i class="fa fa-pinterest-p"></i> </a></li>                
+                <li><a href="https://www.linkedin.com/in/tariquesani"><i class="fa fa-linkedin"></i> </a></li>
+              </ul>
+           </div> 
+          <div class="slidebar-link">            
+            <h3><a href="http://tariquesani.net/blog/2006/05/08/7-a-peadiatrician-and-a-forensic-expert-how-did-you-become-a-php-geek/">More about me</a></h3>
+            <ul>
+              <li><a href="http://tariquesani.net/blog/2006/05/08/7-a-peadiatrician-and-a-forensic-expert-how-did-you-become-a-php-geek/">A pediatrician and a forensic expert how did I become a php geek?</a></li>
+            </ul>
+          </div>
+          <div class="slidebar-link">            
+            <h3><a href="/coppermine/">Coppermine Gallery</a></h3>
+            <ul>
+              <li><a href="/coppermine/">Demo of an Open Source project which I led to 3 million downloads</a></li>
+            </ul>
+          </div>
+          <div class="slidebar-link">            
+            <h3><a href="http://sanisoft.com" >SANIsoft</a></h3>
+            <ul>
+              <li><a href="http://sanisoft.com">High performance and scalable PHP web application development</a></li>
+            </ul>
+          </div>
+          <div class="slidebar-link">            
+            <h3><a href="http://shdlr.com">Shdlr</a></h3>
+            <ul>
+              <li><a href="http://shdlr.com">The online conference schedule creator</a></li>
+            </ul>
+          </div>                    
+           <div class="slidebar-link">
+            <h3>Archive</h3>
+            <ul id="sidebararchives">
+              <!-- Sidebar Archives gets loaded here using javascript -->
+            </ul>
+          </div>
+       </div><!-- slidebar -->
+
+  </div> <!-- col-lg-3 -->
+  </div><!-- row -->
+ </div><!-- container-fluid -->
+</section>  
+
+  
+  
+
+  </div>
+  <footer>
+    &copy; Copyright 2016 by Tarique Sani.
+  </footer>
+</body>
